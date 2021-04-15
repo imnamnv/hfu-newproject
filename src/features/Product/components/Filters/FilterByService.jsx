@@ -35,8 +35,8 @@ const FilterByService = ({ filters = {}, onChange }) => {
       <Typography variant="subtitle2">Dịch vụ</Typography>
       <ul className={classes.service}>
         {[
-          { key: 'isPromotion', name: 'Promotion' },
-          { key: 'isFreeShip', name: 'Promotion' },
+          { key: 'isPromotion', name: 'Có khuyến mãi' },
+          { key: 'isFreeShip', name: 'Giao hàng miễn phí' },
         ].map((service) => (
           <li key={service.key}>
             <FormControlLabel

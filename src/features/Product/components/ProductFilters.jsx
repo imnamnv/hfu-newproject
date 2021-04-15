@@ -6,11 +6,12 @@ import FilterByPrice from './Filters/FilterByPrice';
 import FilterByService from './Filters/FilterByService';
 
 const ProductFilters = ({ filters, onChange }) => {
-  const handleCategoryChange = (newCateroryId) => {
+  const handleCategoryChange = (newCategoryId, newCategoryName) => {
     if (!onChange) return;
 
     const newFilters = {
-      'category.id': newCateroryId,
+      'category.id': newCategoryId,
+      'category.name': newCategoryName,
     };
     onChange(newFilters);
   };
